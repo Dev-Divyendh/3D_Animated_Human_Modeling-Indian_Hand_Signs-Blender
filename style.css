@@ -1,0 +1,90 @@
+#grad{
+    height: 600px;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#grad1{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.column {
+    float: left;
+  }
+  
+#left, #middle {
+   width: 35%;
+}
+  
+#right {
+   width: 30%;
+}
+
+#l1,#r1{
+    width: 10%;
+}
+
+#c1{
+    width: 80%;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+.button {
+    border-radius: 4px;
+    background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
